@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MOBILE_PROGRESS_TEST.MainPage">
+
+
+    <Grid BackgroundColor="#1E1E1E">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <Frame Grid.Row="0" CornerRadius="100" BorderColor="Orange" HasShadow="False" Margin="10" HorizontalOptions="Center">
+            <Image Source="van.jpeg" Aspect="AspectFill" HeightRequest="100" WidthRequest="100" />
+        </Frame>
+
+        <StackLayout Grid.Row="1" HorizontalOptions="Center">
+            <Label Text="Vincent van Gogh" FontSize="20" FontAttributes="Bold" FontFamily="Times New Roman" TextColor="White" HorizontalOptions="Center"/>
+            <Label Text="Dutch, 1853 - 1890" FontSize="15" FontFamily="Calibri" TextColor="White" HorizontalOptions="Center" />
+            <Label Text="Was a Dutch Post-Impressionist painter who is among the most famous and influential artists in the history of Western art." HorizontalOptions="Center"
+                   TextColor="White" MaxLines="2"/>
+            
+        </StackLayout>
+
+        <BoxView Grid.Row="2" HeightRequest="1" Color="White" HorizontalOptions="FillAndExpand" Margin="10,5,10,5" /> 
+        
+        <StackLayout Grid.Row="3" Orientation="Horizontal" HorizontalOptions="Center">
+            <Label Text="$7.5m" FontSize="16" TextColor="White" Margin="5"/>
+            <Label Text="$3.5m" FontSize="16" TextColor="White" Margin="5"/>
+            <Label Text="+598%" FontSize="16" TextColor="White" Margin="5"/>
+            <Label Text="12" FontSize="16" TextColor="White" Margin="5"/>
+        </StackLayout>
+
+        <BoxView Grid.Row="4" HeightRequest="1" Color="White" HorizontalOptions="FillAndExpand" Margin="10,5,10,5" />
+
+
+    </Grid>
+
+
+</ContentPage>
